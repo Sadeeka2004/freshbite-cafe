@@ -3,7 +3,7 @@
 A modern and responsive cafe website built using **HTML, CSS, and JavaScript**.
 
 ## 🌐 Live Website
-👉 https://sadeeka2004.github.io/freshbite-cafe/
+👉  https://sadeeka2004.github.io/freshbite-cafe/
 
 ## ✨ Features
 - Clean and modern design
