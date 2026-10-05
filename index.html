@@ -1,56 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshBite Café</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FreshBite Café — specialty coffee, fresh bakes and comfort food made with care.">
+  <title>FreshBite Café — Coffee, Food & Good Moments</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <header class="hero">
-        <h1>FreshBite Café</h1>
-        <p>Delicious food made fresh every day.</p>
-        <a href="#menu" class="btn">View Menu</a>
-    </header>
+  <div class="page-loader" aria-hidden="true">
+    <span class="loader-cup">☕</span>
+  </div>
 
-    <section id="about" class="section">
-        <h2>About Us</h2>
-        <p>We serve homemade meals, fresh bakery items, and premium coffee.</p>
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="brand" aria-label="FreshBite Café home">
+        <span class="brand-mark">F</span>
+        <span>
+          <strong>FreshBite</strong>
+          <small>CAFÉ & BAKERY</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu">
+        <a href="#about">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="nav-cta">Find a Table <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grain"></div>
+
+      <div class="container hero-content">
+        <p class="eyebrow reveal">EST. 2021 · KEGALLE</p>
+        <h1 class="reveal delay-1">Good coffee.<br><em>Better moments.</em></h1>
+        <p class="hero-copy reveal delay-2">
+          A warm little corner for slow mornings, fresh bakes and conversations
+          that last a little longer.
+        </p>
+
+        <div class="hero-actions reveal delay-3">
+          <a href="#menu" class="btn btn-primary">Explore our menu <span>↓</span></a>
+          <a href="#about" class="text-link">Discover FreshBite <span>↗</span></a>
+        </div>
+
+        <div class="hero-note reveal delay-3">
+          <span class="pulse-dot"></span>
+          <span>Open today · 7:00 AM — 9:00 PM</span>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span>SCROLL</span><i></i>
+      </a>
     </section>
 
-    <section id="menu" class="section">
-        <h2>Our Menu</h2>
-        <ul>
-            <li><img src="images/burger.jpg" alt="Burger"> Burger</li>
-            <li><img src="images/coffee.jpg" alt="Coffee"> Coffee</li>
-            <li><img src="images/cake.jpg" alt="Cake"> Chocolate Cake</li>
-            
-        </ul>
+    <section class="intro section-pad" id="about">
+      <div class="container intro-grid">
+        <div class="section-label reveal">01 <span>OUR STORY</span></div>
+        <div class="intro-copy">
+          <h2 class="reveal">Made fresh.<br><em>Served warm.</em></h2>
+          <p class="lead reveal delay-1">
+            FreshBite started with a simple idea: make everyday café moments
+            feel a little more special.
+          </p>
+          <p class="reveal delay-2">
+            From carefully brewed coffee to oven-fresh pastries and comforting
+            plates, everything is prepared with good ingredients and a little
+            patience. Come in for breakfast, stay for the atmosphere.
+          </p>
+          <a href="#contact" class="arrow-link reveal delay-3">Our little corner <span>→</span></a>
+        </div>
+        <div class="intro-image-wrap reveal delay-2">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="Fresh coffee being prepared">
+          </div>
+          <span class="image-tag">BREWED WITH CARE</span>
+        </div>
+      </div>
     </section>
 
-    <section id="gallery" class="section">
-    <h2>Gallery</h2>
-    <div class="gallery-box">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
-        <img src="https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg">
-        <img src="https://images.pexels.com/photos/302887/pexels-photo-302887.jpeg">
-        <img src="https://images.pexels.com/photos/3776942/pexels-photo-3776942.jpeg">
+    <section class="marquee" aria-label="FreshBite highlights">
+      <div class="marquee-track">
+        <span>FRESH COFFEE</span><b>✦</b><span>BAKED DAILY</span><b>✦</b>
+        <span>GOOD FOOD</span><b>✦</b><span>GOOD COMPANY</span><b>✦</b>
+        <span>FRESH COFFEE</span><b>✦</b><span>BAKED DAILY</span><b>✦</b>
+        <span>GOOD FOOD</span><b>✦</b><span>GOOD COMPANY</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-label">02 <span>THE MENU</span></div>
+          <div>
+            <p class="eyebrow">A LITTLE SOMETHING FOR EVERY MOOD</p>
+            <h2>Made to be <em>savored.</em></h2>
+          </div>
+          <p class="heading-note">Simple ingredients. Thoughtful recipes.<br>Nothing overcomplicated.</p>
+        </div>
+
+        <div class="menu-tabs reveal delay-1" role="tablist" aria-label="Menu categories">
+          <button class="tab active" data-category="coffee">Coffee & Drinks</button>
+          <button class="tab" data-category="breakfast">Breakfast</button>
+          <button class="tab" data-category="bakes">Bakes & Sweets</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid"></div>
+
+        <div class="menu-bottom reveal">
+          <span>Prices shown in LKR</span>
+          <a href="#contact" class="arrow-link">Ask about today's specials <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-image"></div>
+      <div class="experience-content">
+        <div class="section-label light reveal">03 <span>THE EXPERIENCE</span></div>
+        <p class="eyebrow light-text reveal delay-1">NOT JUST A CUP OF COFFEE</p>
+        <h2 class="reveal delay-1">Stay a while.<br><em>Make it yours.</em></h2>
+        <p class="reveal delay-2">
+          Whether you're catching up with a friend, getting a little work done,
+          or simply enjoying five quiet minutes, FreshBite is made for the in-between moments.
+        </p>
+        <div class="experience-points reveal delay-3">
+          <div><strong>01</strong><span>Slow mornings</span></div>
+          <div><strong>02</strong><span>Work-friendly corners</span></div>
+          <div><strong>03</strong><span>Fresh bakes, all day</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <div class="container">
+        <div class="gallery-heading reveal">
+          <div class="section-label">04 <span>INSIDE FRESHBITE</span></div>
+          <h2>A place worth <em>lingering.</em></h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-large reveal">
+            <img src="https://images.unsplash.com/photo-1575126989651-2d4a29211c09?auto=format&fit=crop&w=1200&q=85" alt="Coffee on a café table" loading="lazy">
+            <figcaption>Morning rituals</figcaption>
+          </figure>
+          <figure class="gallery-item reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1750378626977-e70a909d9e0c?auto=format&fit=crop&w=1200&q=85" alt="Coffee and pastry" loading="lazy">
+            <figcaption>Freshly brewed</figcaption>
+          </figure>
+          <figure class="gallery-item reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1761695939616-1c03087c1ce4?auto=format&fit=crop&w=1200&q=85" alt="Cozy café interior" loading="lazy">
+            <figcaption>Your kind of place</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container">
+        <div class="quote-mark reveal">“</div>
+        <blockquote class="reveal delay-1">
+          The best memories usually start with<br>
+          <em>one more coffee.</em>
+        </blockquote>
+        <div class="quote-line reveal delay-2"></div>
+        <p class="reveal delay-2">— THE FRESHBITE PHILOSOPHY</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-image"></div>
+      <div class="contact-content">
+        <div class="section-label reveal">05 <span>COME SAY HELLO</span></div>
+        <h2 class="reveal">Your table<br>is <em>waiting.</em></h2>
+        <p class="reveal delay-1">Drop in whenever you're nearby. We'd love to make you a coffee.</p>
+
+        <div class="contact-details reveal delay-2">
+          <div>
+            <span>VISIT</span>
+            <p>Mawanella Town<br>Kegalle, Sri Lanka</p>
+          </div>
+          <div>
+            <span>OPEN</span>
+            <p>Monday — Sunday<br>7:00 AM — 9:00 PM</p>
+          </div>
+          <div>
+            <span>CONTACT</span>
+            <p><a href="tel:+94771234567">+94 77 123 4567</a><br><a href="mailto:freshbite@gmail.com">freshbite@gmail.com</a></p>
+          </div>
+        </div>
+
+        <a class="btn btn-dark reveal delay-3" href="mailto:freshbite@gmail.com?subject=Table%20Enquiry">Make an enquiry <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-top">
+      <a href="#top" class="brand footer-brand">
+        <span class="brand-mark">F</span>
+        <span><strong>FreshBite</strong><small>CAFÉ & BAKERY</small></span>
+      </a>
+      <p>Fresh food. Slow moments. Good people.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="TikTok">TK</a>
+      </div>
     </div>
-</section>
+    <div class="container footer-bottom">
+      <span>© 2026 FreshBite Café. All rights reserved.</span>
+      <span>Made with care in Sri Lanka.</span>
+    </div>
+  </footer>
 
- 
-
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:freshbite@gmail.com">freshbite@gmail.com</a></p>
-<p>Phone: <a href="tel:+94771234567">+94 77 123 4567</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 FreshBite Café</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <button class="back-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
 </html>
